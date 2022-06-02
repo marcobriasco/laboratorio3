@@ -4,8 +4,8 @@
 }
 
 p {
-	color: black ;
-	border: 1px solid red;
+	background-color: black;
+	color: white ;
 }
 
 header{
@@ -14,7 +14,6 @@ header{
 	justify-content: space-around;
 	background-color: black;
 	border: 1px solid red;
-	
 }
 
 nav{
@@ -44,19 +43,32 @@ a:hover{
 }
 
 section img{
-	border: 1px solid red;
 	padding-left: 8.5%;
 }
 
 section p{
 	padding-left: 2%;
+	font-size: 130%;
 }
 
-footer{
+footer.pie p{
+	background-color: grey;
 	text-align: center;
-	font-size: 90%;
+	font-size: 100%;
+	color: black;
 }
 
-footer p {
-	color: #1C2833;;
+
+h1.galeria{
+	padding-left: 35%;
+	font-size: 300%;
+}
+
+div.galeria{
+	padding-left: 12%;
+}
+
+img.example-image{
+	padding:  1%;
+	padding-left: 6%;
 }
