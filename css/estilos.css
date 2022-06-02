@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: black ;
+	border: 1px solid red;
+}
+
+header{
+	padding: 2% 5% 2% 5%;
+	display: flex;
+	justify-content: space-around;
+	background-color: black;
+	border: 1px solid red;
+	
+}
+
+nav{
+	width: 70%;
+	justify-content: space-around;
+	border: 1px solid red;
+}
+
+ul{
+	border: 1px solid white;
+}
+
+li{
+	display: inline;
+	border: 1px solid yellow;
+}
+
+a{
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 150%;
+}
+
+a:hover{
+	color: red;
+}
+
+section img{
+	border: 1px solid red;
+	padding-left: 8.5%;
+}
+
+section p{
+	padding-left: 2%;
+}
+
+footer{
+	text-align: center;
+	font-size: 90%;
+}
+
+footer p {
+	color: #1C2833;;
+}
