@@ -1,47 +1,76 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
+
+/*Generales--------------------------------------------*/
 p {
 	background-color: black;
 	color: white ;
 }
+h2{
+	text-align: center;
+	font-size: 300%;
+	background-color: grey;
+}
+div.galeria{
+	padding-left: 12%;
+}
+img.example-image{
+	padding:  1%;
+	padding-left: 6%;
+}
+body{
+	background-color: grey;
+}
 
+/*header-----------------------------------------------*/
 header{
 	padding: 2% 5% 2% 5%;
 	display: flex;
 	justify-content: space-around;
 	background-color: black;
-	border: 1px solid red;
+	border-radius: 1%;
 }
-
 nav{
 	width: 70%;
-	justify-content: space-around;
-	border: 1px solid red;
+	display: flex;
+	align-items: flex-end;
+	/*border: 1px solid red;*/
 }
-
 ul{
-	border: 1px solid white;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	/*border: 1px solid white;*/
 }
-
 li{
-	display: inline;
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 }
-
+h1 a{
+	font-size: 150%;
+}
 a{
 	font-family: sans-serif;
 	text-decoration: none;
 	color: white;
-	font-size: 150%;
+	font-size: 180%;
 }
-
 a:hover{
 	color: red;
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+li ul{
+	display: none;
+}
+nav li:hover ul{
+	display: block;
 }
 
+/*body-----------------------------------------*/
 section img{
 	padding-left: 8.5%;
 }
@@ -51,6 +80,7 @@ section p{
 	font-size: 130%;
 }
 
+/*footer---------------------------------------*/
 footer.pie p{
 	background-color: grey;
 	text-align: center;
@@ -58,17 +88,31 @@ footer.pie p{
 	color: black;
 }
 
-
-h2{
-	padding-left: 30%;
-	font-size: 300%;
+/*Form-----------------------------*/
+form{
+	width: 50%;
+	background-color: #24303c;
+	padding: 2%;
+	margin: auto;
+	border-radius: 5%;
 }
-
-div.galeria{
-	padding-left: 12%;
+form div{
+	display: flex;
 }
-
-img.example-image{
-	padding:  1%;
-	padding-left: 6%;
+div label{
+	width: 40%;
+	color: white;
+	padding-left: 10%;
+	font-size: 140%;
 }
+div input{
+	width: 50%;
+	padding: 1%;
+}
+input#enviar{
+	width: 20%;
+	padding: 2%;
+	margin-top: 2%;
+	margin-left: 40%;
+}
+/*----------------------------------------*/
