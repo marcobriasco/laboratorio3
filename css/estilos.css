@@ -67,8 +67,10 @@ li ul{
 	display: none;
 }
 nav li:hover ul{
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
+
 
 /*body-----------------------------------------*/
 section img{
@@ -81,7 +83,7 @@ section p{
 }
 
 /*footer---------------------------------------*/
-footer.pie p{
+footer p{
 	background-color: grey;
 	text-align: center;
 	font-size: 100%;
