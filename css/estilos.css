@@ -11,6 +11,7 @@ p {
 	color: white ;
 }
 h2{
+	display: block;
 	text-align: center;
 	font-size: 300%;
 	background-color: grey;
@@ -24,6 +25,7 @@ img.example-image{
 }
 body{
 	background-color: grey;
+	/*max-width: 1300px; ----------------------PREGUNTAR */
 }
 
 /*header-----------------------------------------------*/
@@ -73,6 +75,9 @@ nav li:hover ul{
 
 
 /*body-----------------------------------------*/
+section{
+	display: block;
+}
 section img{
 	padding-left: 8.5%;
 }
@@ -118,3 +123,19 @@ input#enviar{
 	margin-left: 40%;
 }
 /*----------------------------------------*/
+/*Sinopsis--------------------------------*/
+.sinopsis{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.sinopsis img{
+	padding: 0;
+}
+/*Personajes------------------------------*/
+.personajes{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.personajes img{
+	padding: 0;
+}
