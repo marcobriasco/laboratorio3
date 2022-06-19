@@ -9,17 +9,22 @@
 		<title>THE OFFICE/ Galeria</title>
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
 		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 		<header>
 				<h1><a href="index.html">THE OFFICE</a></h1>
-				<nav>
+				<a href="javascript:void(0);"class="icon" onclick="myFunction()" >
+					<i class="fa fa-bars"></i>
+				</a>
+				<nav class="barratop" id="mibarra">
 					<ul>
 						<li><a href="galeria.html">Galeria</a></li>
 						<li><a href="sinopsis.html">Sinopsis</a></li>
-						<li><a href="personajes.html">Personajes</a>
-							<ul>
+						<li>
+							<a href="#">Personajes</a>
+							<ul class="personajes-desplegables">
 								<a href="michael.html">Michael Scott</a>
 								<a href="jim.html">Jim Halpert</a>
 								<a href="pam.html">Pamela Beesley</a>
@@ -56,6 +61,17 @@
 		</footer>
 
 		<script src="javascript/lightbox.js"></script>
+		<script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById("mibarra");
+				if (x.className === "barratop") {
+					x.className += " responsive";
+				} 
+				else {
+					x.className = "barratop";
+				}
+			}
+		</script>	
 	</body>
 
 </html>
