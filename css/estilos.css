@@ -3,8 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-
 /*Generales--------------------------------------------*/
 p {
 	background-color: black;
@@ -16,17 +14,15 @@ h2{
 	font-size: 300%;
 	background-color: grey;
 }
-div.galeria{
-	padding-left: 12%;
-}
-img.example-image{
-	padding:  1%;
-	padding-left: 6%;
-}
 body{
 	background-color: grey;
 	max-width: 1300px;
 	margin: 0 auto;
+}
+/*Galeria----------------------------------------------*/
+img.example-image{
+	padding:  1%;
+	padding-left: 5.5%;
 }
 
 /*header-----------------------------------------------*/
@@ -126,7 +122,6 @@ input#enviar{
 	margin-top: 2%;
 	margin-left: 40%;
 }
-/*----------------------------------------*/
 /*Sinopsis--------------------------------*/
 .sinopsis{
 	display: flex;
@@ -143,7 +138,7 @@ input#enviar{
 .personajes img{
 	padding: 0;
 }
-
+/*Responsive para celular------------------*/
 @media screen and (max-width: 480px){
 /*menu hamburguesa-------------------------*/
 .icon{ 
@@ -168,6 +163,7 @@ nav.responsive li ul{
 }
 nav.responsive li ul.respo{
 	display: block;
+	width: 50%;
 }
 
 /*Index-----------------------------------*/
@@ -177,14 +173,19 @@ section img{
 }
 /*Sinopsis--------------------------------*/
 .sinopsis{
-	display: flex;
 	flex-direction: column;
 }
 /*Personajes------------------------------*/
 .personajes{
-	display: flex;
 	flex-direction: column;
 }
-
+/*Galeria---------------------------------*/
+img.example-image{
+	padding:  2%;
+}
+/*Form------------------------------------*/
+form{
+	width: 100%;
+}
 
 }
