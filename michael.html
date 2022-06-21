@@ -22,8 +22,8 @@
 						<li><a href="galeria.html">Galeria</a></li>
 						<li><a href="sinopsis.html">Sinopsis</a></li>
 						<li>
-							<a href="#">Personajes</a>
-							<ul class="personajes-desplegables">
+							<a href="javascript: void(0);" onclick="desplegar()" >Personajes</a> 
+							<ul class="personajes-desplegables" id="mispersonajes">
 								<a href="michael.html">Michael Scott</a>
 								<a href="jim.html">Jim Halpert</a>
 								<a href="pam.html">Pamela Beesley</a>
@@ -62,6 +62,15 @@
 				} 
 				else {
 					x.className = "barratop";
+				}
+			}
+			function desplegar(){
+				var x = document.getElementById("mispersonajes");
+				if (x.className === "personajes-desplegables"){
+					x.className += " respo";
+				}
+				else{
+					x.className ="personajes-desplegables";
 				}
 			}
 		</script>	

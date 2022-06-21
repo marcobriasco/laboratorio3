@@ -25,10 +25,8 @@ img.example-image{
 }
 body{
 	background-color: grey;
-	/*max-width: 1300px; ----------------------PREGUNTAR */
 	max-width: 1300px;
 	margin: 0 auto;
-
 }
 
 /*header-----------------------------------------------*/
@@ -50,10 +48,6 @@ ul{
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	/*border: 1px solid white;*/
-}
-li{
-	/*border: 1px solid yellow;*/
 }
 h1 a{
 	font-size: 150%;
@@ -63,6 +57,9 @@ a{
 	text-decoration: none;
 	color: white;
 	font-size: 180%;
+}
+.icon{
+	display: none;
 }
 a:hover{
 	color: red;
@@ -77,6 +74,7 @@ nav li:hover ul{
 	flex-direction: column;
 	position: absolute;
 	background-color: black;
+ 	width: 20%;
 }
 
 
@@ -150,7 +148,6 @@ input#enviar{
 /*menu hamburguesa-------------------------*/
 .icon{ 
 	display: block;
-	float: right;
 }
 nav ul{
 	display: none;
@@ -160,18 +157,34 @@ nav.responsive ul{
 }
 nav.responsive ul li {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding: 0.5rem;
 }
 nav.responsive ul li a {
 	padding-right: 0;
 }
+nav.responsive li ul{
+	display: none;
+}
+nav.responsive li ul.respo{
+	display: block;
+}
 
+/*Index-----------------------------------*/
 section img{
 	width: 100%;
 	padding: 0;
 }
-
+/*Sinopsis--------------------------------*/
+.sinopsis{
+	display: flex;
+	flex-direction: column;
+}
+/*Personajes------------------------------*/
+.personajes{
+	display: flex;
+	flex-direction: column;
+}
 
 
 }

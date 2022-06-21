@@ -14,7 +14,7 @@
 	<body>
 		<header>
 				<h1><a href="index.html">THE OFFICE</a></h1>
-				<a href="javascript:void(0);"class="icon" onclick="myFunction()" >
+				<a href="javascript: void(0);"class="icon" onclick="myFunction()" >
 					<i class="fa fa-bars"></i>
 				</a>
 				<nav class="barratop" id="mibarra">
@@ -22,13 +22,13 @@
 						<li><a href="galeria.html">Galeria</a></li>
 						<li><a href="sinopsis.html">Sinopsis</a></li>
 						<li> 
-							<a href="#">Personajes</a> 
-							<ul class="personajes-desplegables">
-								<a href="michael.html">Michael Scott</a>
-								<a href="jim.html">Jim Halpert</a>
-								<a href="pam.html">Pamela Beesley</a>
-								<a href="dwight.html">Dwight Schrute</a>
-								<a href="ryan.html">Ryan Howard</a>
+							<a href="javascript: void(0);" onclick="desplegar()" >Personajes</a> 
+							<ul class="personajes-desplegables" id="mispersonajes">
+								<li><a href="michael.html">Michael Scott</a></li>
+								<li><a href="jim.html">Jim Halpert</a></li>
+								<li><a href="pam.html">Pamela Beesley</a></li>
+								<li><a href="dwight.html">Dwight Schrute</a></li>
+								<li><a href="ryan.html">Ryan Howard</a></li>
 							</ul>
 						</li>
 						<li><a href="contacto.html">Contacto</a></li>
@@ -61,6 +61,16 @@
 				} 
 				else {
 					x.className = "barratop";
+				}
+			}
+
+			function desplegar(){
+				var x = document.getElementById("mispersonajes");
+				if (x.className === "personajes-desplegables"){
+					x.className += " respo";
+				}
+				else{
+					x.className ="personajes-desplegables";
 				}
 			}
 		</script>	
