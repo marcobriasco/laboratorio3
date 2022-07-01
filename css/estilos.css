@@ -84,7 +84,11 @@ section img{
 
 section p{
 	padding-left: 2%;
-	font-size: 130%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 1%;
+	line-height: 120%;
+	font-size: 120%;
 }
 
 /*footer---------------------------------------*/
@@ -96,6 +100,13 @@ footer p{
 }
 
 /*Form-----------------------------*/
+div.contacto{
+	display: flex;
+	background-color: black;
+}
+div.contacto img{
+	margin: 1%;
+}
 form{
 	width: 50%;
 	background-color: #24303c;
@@ -186,6 +197,14 @@ img.example-image{
 /*Form------------------------------------*/
 form{
 	width: 100%;
+	margin-bottom: 1%;
+}
+div.contacto{
+	flex-direction: column;
+}
+div.contacto img{
+	margin: 0%;
+	margin-bottom: 1%;
 }
 
 }
